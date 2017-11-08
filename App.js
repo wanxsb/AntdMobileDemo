@@ -21,12 +21,16 @@ const instructions = Platform.select({
 });
 
 export default class App extends Component<{}> {
+
+  componentDidMount () {
+    Toast.info("jdskfjksdjfk")
+  }
   render() {
     return (
       <View style={styles.container}>
-        <List>
+        <List style={{height: 50}}>
           <List.Item extra="49823">
-            ID
+            身份证号
           </List.Item>
         </List>
         <Text style={styles.welcome}>
